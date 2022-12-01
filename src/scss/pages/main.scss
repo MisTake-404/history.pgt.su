@@ -1,0 +1,114 @@
+main{
+  padding-top: calc(80px + 100px);
+  margin-bottom: calc(80px + 100px);
+}
+
+.main-info{
+  margin-bottom: 200px;
+  .grid__wrapper{
+    grid-gap: 3em;
+  }
+  &__left{
+    grid-column: 6 span;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__text{
+    margin-bottom: 20px;
+  }
+  &__btn{
+    background-color: $mainPink;
+    border-color: $mainPink;
+    padding: 20px;
+    transition: .3s;
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+
+  &__right{
+    grid-column: 5 span;
+    position: relative;
+
+    @media (max-width: 901px){
+      grid-column: 6 span;
+    }
+  }
+
+  &__image{
+    height: 500px;
+    background-size: cover;
+    background-image: url("../img/index/student.jpg");
+    background-position: top center;
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(34, 60, 80, 0.3) inset;
+    -moz-box-shadow: 0px 0px 20px 2px rgba(34, 60, 80, 0.3) inset;
+    box-shadow: 0px 0px 20px 2px rgba(34, 60, 80, 0.3) inset;
+  }
+
+  &__left{
+
+  }
+
+  &__left{
+
+  }
+}
+
+.decor-shape{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  transition: .3s;
+
+  &:hover{
+    transform: scale(1.05);
+  }
+
+  @media (max-width: $breakpoint-sm){
+    display: none;
+  }
+
+  &--1{
+    background-color: #2e323b;
+    top: calc(50% - 75px);
+    left: -75px;
+    z-index: -1;
+  }
+  &--2{
+    background-color: #d75555;
+    height: 200px;
+    top: -50px;
+    right: -50px;
+    z-index: -1;
+    border-radius: 10px 10px 100px 100px;
+  }
+  &--3{
+    background-color: #235a95;
+    bottom: -30px;
+    right: -50px;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.directors{
+  &__item{
+    // align-self: start;
+    grid-column: 4 span;
+    max-height: 300px;
+    padding: 20px;
+    background-color: $mainPink;
+    border-radius: 300px;
+    img{
+      max-height: 100%;
+      border-radius: 300px;
+    }
+  }
+}
