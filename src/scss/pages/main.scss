@@ -106,9 +106,121 @@ main{
     padding: 20px;
     background-color: $mainPink;
     border-radius: 300px;
+    transition: .3s;
+    &:hover{
+      transform: scale(1.05);
+    }
     img{
       max-height: 100%;
       border-radius: 300px;
     }
+    &--title{
+      border-radius: 0px;
+      background-color: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-column: 6 span;
+      h2{
+        font-size: 80px;
+        color: #FFFFFF;
+      	text-shadow:
+      		-0   -4px 0   #000000,
+      		 0   -4px 0   #000000,
+      		-0    4px 0   #000000,
+      		 0    4px 0   #000000,
+      		-4px -0   0   #000000,
+      		 4px -0   0   #000000,
+      		-4px  0   0   #000000,
+      		 4px  0   0   #000000,
+      		-1px -4px 0   #000000,
+      		 1px -4px 0   #000000,
+      		-1px  4px 0   #000000,
+      		 1px  4px 0   #000000,
+      		-4px -1px 0   #000000,
+      		 4px -1px 0   #000000,
+      		-4px  1px 0   #000000,
+      		 4px  1px 0   #000000,
+      		-2px -4px 0   #000000,
+      		 2px -4px 0   #000000,
+      		-2px  4px 0   #000000,
+      		 2px  4px 0   #000000,
+      		-4px -2px 0   #000000,
+      		 4px -2px 0   #000000,
+      		-4px  2px 0   #000000,
+      		 4px  2px 0   #000000,
+      		-3px -4px 0   #000000,
+      		 3px -4px 0   #000000,
+      		-3px  4px 0   #000000,
+      		 3px  4px 0   #000000,
+      		-4px -3px 0   #000000,
+      		 4px -3px 0   #000000,
+      		-4px  3px 0   #000000,
+      		 4px  3px 0   #000000,
+      		-4px -4px 0   #000000,
+      		 4px -4px 0   #000000,
+      		-4px  4px 0   #000000,
+      		 4px  4px 0   #000000,
+      		-4px -4px 0   #000000,
+      		 4px -4px 0   #000000,
+      		-4px  4px 0   #000000,
+      		 4px  4px 0   #000000;
+      }
+      &:hover{
+        transform: scale(1);
+      }
+      position: relative;
+      &::after{
+        content: "";
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        height: 150px;
+        width: 250px;
+        background-color: #444;
+      }
+      &::before{
+        content: "";
+        z-index: -1;
+        left: 0;
+        top: 0;
+        position: absolute;
+        height: 150px;
+        width: 250px;
+        background-color: #444;
+      }
+    }
+    &--1{
+    }
+    &--2{
+    }
+    &--3{
+    }
+    &--4{
+      grid-column: 3 span;
+      align-self: start;
+    }
+    &--5{
+      grid-column: 3 span;
+      align-self: start;
+    }
+    &--6{
+      grid-column: 3 span;
+      align-self: start;
+    }
+    &--7{
+      grid-column: 3 span;
+      align-self: start;
+    }
+    &--8{
+      grid-column: 3 span;
+      align-self: start;
+    }
+    &--9{
+      grid-column: 3 span;
+      align-self: start;
+    }
   }
+
 }

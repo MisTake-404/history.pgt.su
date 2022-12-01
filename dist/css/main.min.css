@@ -1830,8 +1830,73 @@ main {
   padding: 20px;
   background-color: #d55552;
   border-radius: 300px;
+  transition: 0.3s;
+}
+.directors__item:hover {
+  transform: scale(1.05);
 }
 .directors__item img {
   max-height: 100%;
   border-radius: 300px;
+}
+.directors__item--title {
+  border-radius: 0px;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 6 span;
+  position: relative;
+}
+.directors__item--title h2 {
+  font-size: 80px;
+  color: #FFFFFF;
+  text-shadow: 0 -4px 0 #000000, 0 -4px 0 #000000, 0 4px 0 #000000, 0 4px 0 #000000, -4px 0 0 #000000, 4px 0 0 #000000, -4px 0 0 #000000, 4px 0 0 #000000, -1px -4px 0 #000000, 1px -4px 0 #000000, -1px 4px 0 #000000, 1px 4px 0 #000000, -4px -1px 0 #000000, 4px -1px 0 #000000, -4px 1px 0 #000000, 4px 1px 0 #000000, -2px -4px 0 #000000, 2px -4px 0 #000000, -2px 4px 0 #000000, 2px 4px 0 #000000, -4px -2px 0 #000000, 4px -2px 0 #000000, -4px 2px 0 #000000, 4px 2px 0 #000000, -3px -4px 0 #000000, 3px -4px 0 #000000, -3px 4px 0 #000000, 3px 4px 0 #000000, -4px -3px 0 #000000, 4px -3px 0 #000000, -4px 3px 0 #000000, 4px 3px 0 #000000, -4px -4px 0 #000000, 4px -4px 0 #000000, -4px 4px 0 #000000, 4px 4px 0 #000000, -4px -4px 0 #000000, 4px -4px 0 #000000, -4px 4px 0 #000000, 4px 4px 0 #000000;
+}
+.directors__item--title:hover {
+  transform: scale(1);
+}
+.directors__item--title::after {
+  content: "";
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 150px;
+  width: 250px;
+  background-color: #444;
+}
+.directors__item--title::before {
+  content: "";
+  z-index: -1;
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 150px;
+  width: 250px;
+  background-color: #444;
+}
+.directors__item--4 {
+  grid-column: 3 span;
+  align-self: start;
+}
+.directors__item--5 {
+  grid-column: 3 span;
+  align-self: start;
+}
+.directors__item--6 {
+  grid-column: 3 span;
+  align-self: start;
+}
+.directors__item--7 {
+  grid-column: 3 span;
+  align-self: start;
+}
+.directors__item--8 {
+  grid-column: 3 span;
+  align-self: start;
+}
+.directors__item--9 {
+  grid-column: 3 span;
+  align-self: start;
 }
